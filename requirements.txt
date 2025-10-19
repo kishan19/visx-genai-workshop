@@ -17,3 +17,4 @@ plotly
 pydantic
 altair
 pandas
+vega-datasets
