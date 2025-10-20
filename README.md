@@ -1,8 +1,14 @@
-# LangGraph Agentic Workflow for Data Analysis
+# TADDR: Towards Agentic Data Driven Reports
 
-This implementation provides a comprehensive LangGraph-based evaluator orchestrator agentic workflow for generating data-driven reports from CSV datasets. The workflow follows the architecture depicted in the provided image and includes 5 specialized agents working together to create compelling visualizations and insights.
+This repository contains the TADDR workflow — an agentic, LangGraph-based system for generating data-driven reports from CSV datasets. The primary implementation lives in `langgraph_agent.py`, which orchestrates a multi-agent pipeline to produce visual analytics and narrative insights automatically.
 
-## 🏗️ Architecture Overview
+## Artifacts of TADDR research
+
+- Camera-ready paper presented at the conference: `https://drive.google.com/file/d/1PUCsM1Z4sZc46Rqe5CW9D5IpotpCCPRe/view?usp=share_link`
+- TADDR's data story on the AGENTIC VIS challenge dataset: `https://drive.google.com/file/d/15b6YyhMQDJb29SDA_8U3mbZhGorz6xx5/view?usp=share_link`
+- TADDR's data story on a new LLM domain (sport of cricket): `https://drive.google.com/file/d/1thMCCtn_uYjTSV_v9WyHvvKpvX124a7g/view?usp=sharing`
+
+## 🏗️ Architecture Overview (TADDR)
 
 The workflow consists of 5 specialized agents that work in sequence with feedback loops:
 
@@ -12,7 +18,7 @@ CSV Input → Data Profiling → Chart Recommendation → Chart Generator → Ch
 HTML Output ← Narrative Writer ← (Feedback Loop) ← Chart Generator
 ```
 
-## 🤖 Agents Description
+## 🤖 Agents in TADDR
 
 ### 1. **Data Profiling Agent**
 - **Purpose**: Creates a comprehensive data quality report from the CSV
@@ -57,12 +63,12 @@ HTML Output ← Narrative Writer ← (Feedback Loop) ← Chart Generator
 ## 📁 File Structure
 
 ```
-submission/
-├── langgraph_agent.py          # Main workflow implementation
+visx-genai-workshop/
+├── langgraph_agent.py          # Primary TADDR implementation (start here)
 ├── run_langgraph_workflow.py   # Runner script
 ├── requirements.txt            # Dependencies
-├── README_LangGraph.md         # This documentation
 ├── helpers.py                  # LLM helper functions
+├── test_workflow.py            # Tests
 └── dataset.csv                 # Sample dataset
 ```
 
@@ -74,7 +80,7 @@ submission/
 pip install -r requirements.txt
 ```
 
-### 2. Run the Workflow
+### 2. Run the TADDR Workflow
 
 ```bash
 python run_langgraph_workflow.py
@@ -93,7 +99,7 @@ The workflow generates an `output.html` file containing:
 
 ### Using Custom Datasets
 
-The workflow supports multiple ways to specify input datasets:
+TADDR supports multiple ways to specify input datasets:
 
 #### Option 1: Default Dataset
 ```python
@@ -151,7 +157,7 @@ Each agent can be customized by modifying the prompts in the respective function
 
 ## 📊 Output Format
 
-The workflow generates a comprehensive HTML report with:
+TADDR generates a comprehensive HTML report with:
 
 1. **Dataset Overview**: Shape, columns, data quality metrics
 2. **Interactive Charts**: Altair visualizations embedded with Vega-Lite
@@ -161,7 +167,7 @@ The workflow generates a comprehensive HTML report with:
 
 ## 🔄 Feedback Loop
 
-The workflow includes an intelligent feedback loop:
+TADDR includes an intelligent feedback loop:
 
 - Chart Evaluator can send charts back to Chart Generator for refinement
 - Maximum iterations are configurable (default: 3)
@@ -192,7 +198,7 @@ The workflow uses a comprehensive `AgentState` TypedDict to manage:
 
 ## 🎯 Use Cases
 
-This workflow is ideal for:
+TADDR is ideal for:
 
 - **Business Intelligence**: Automated data analysis and reporting
 - **Data Exploration**: Quick insights from new datasets
