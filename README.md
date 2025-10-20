@@ -4,9 +4,9 @@ This repository contains the TADDR workflow — an agentic, LangGraph-based syst
 
 ## Artifacts of TADDR research
 
-- Camera-ready paper presented at the conference: `https://drive.google.com/file/d/1PUCsM1Z4sZc46Rqe5CW9D5IpotpCCPRe/view?usp=share_link`
-- TADDR's data story on the AGENTIC VIS challenge dataset: `https://drive.google.com/file/d/15b6YyhMQDJb29SDA_8U3mbZhGorz6xx5/view?usp=share_link`
-- TADDR's data story on a new LLM domain (sport of cricket): `https://drive.google.com/file/d/1thMCCtn_uYjTSV_v9WyHvvKpvX124a7g/view?usp=sharing`
+- Camera-ready paper presented at the conference: [Camera-ready paper](https://drive.google.com/file/d/1PUCsM1Z4sZc46Rqe5CW9D5IpotpCCPRe/view?usp=share_link)
+- TADDR's data story on the AGENTIC VIS challenge dataset: [AGENTIC VIS data story](https://drive.google.com/file/d/15b6YyhMQDJb29SDA_8U3mbZhGorz6xx5/view?usp=share_link)
+- TADDR's data story on a new LLM domain (sport of cricket): [Cricket data story](https://drive.google.com/file/d/1thMCCtn_uYjTSV_v9WyHvvKpvX124a7g/view?usp=sharing)
 
 ## 🏗️ Architecture Overview (TADDR)
 
